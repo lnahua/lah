@@ -12,14 +12,13 @@ k = 3
 n = len(s)
 if k >= n:
     print('0')
-
 count = 0
 for i in range(k):
     if s[i] in ['a','i','o','u','e']:
         count += 1
 j = k
 max_value = count
-while j < n-k:
+while j < n:
     if s[j] in ['a','i','o','u','e']:
         count += 1
     if s[j-k] in ['a','i','o','u','e']:
